@@ -1,0 +1,399 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rcol="stylesheet" href="styles.css">
+    <title>Document</title>
+    <style>
+        #header {
+            display: grid;
+            grid-template-columns: 0.5fr 1fr 0.3fr 0.3fr 0.3fr 0.3fr 1.1fr;
+            grid-template-rows: 1fr;
+            gap: 0px 0px;
+            grid-template-areas:
+                ". img e1 e2 e3 e4 e5 .";
+        }
+
+        .img {
+            grid-area: img;
+        }
+
+        .e1 {
+            grid-area: e1;
+            background-position: -120px -187px;
+        }
+
+        .e1:hover {
+            background-position: 0px -93px;
+        }
+
+        .e2 {
+            grid-area: e2;
+            background-position: -120px 0px;
+        }
+
+        .e2:hover {
+            background-position: 0px -279px;
+        }
+
+        .e3 {
+            grid-area: e3;
+            background-position: -120px -279px;
+        }
+
+        .e3:hover {
+            background-position: 0px -187px;
+        }
+
+        .e4 {
+            grid-area: e4;
+            background-position: -120px -373px;
+        }
+
+        .e4:hover {
+            background-position: 0px 0px;
+        }
+
+        .e5 {
+            grid-area: e5;
+            background-position: -120px -93px;
+        }
+
+        .e5:hover {
+            background-position: 0px -373px;
+        }
+
+        .e1,
+        .e2,
+        .e3,
+        .e4,
+        .e5 {
+            display: inline-block;
+            background-image: url('merged.png');
+            background-repeat: no-repeat;
+            width: 100px;
+            height: 70px;
+            cursor: pointer;
+        }
+
+
+        #landing-page {
+            display: grid;
+            grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+            grid-template-rows: 1fr;
+            gap: 0px 0px;
+            grid-template-areas:
+                ". part text .";
+        }
+
+
+.part{
+    grid-area: part;
+}
+
+
+
+.text{
+    grid-area: text;
+}
+
+
+
+.text p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.7em;
+    color: rgb(172, 167, 151);
+    text-align: justify;
+
+}
+
+.dark{
+color:rgb(46, 46, 46);
+}
+
+.green{
+color:rgb(187, 199, 97);
+}
+
+#column{
+    grid-area: column;
+    float: left;
+    margin-left: 16%;
+}
+
+ul{
+    margin-left: 2%;
+    list-style-type: square;
+}
+
+li{
+    margin: 5%;
+    width: 70%;
+    font-size: smaller;
+    color: rgb(105, 105, 102);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.img{
+    margin-left: 15.1%;
+}
+
+#workpls {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 0.1fr 2.4fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". column line content";
+}
+
+#line{
+    grid-area: line;
+}
+
+#line img {
+    height: 305px;
+}
+
+#content{
+    grid-area: content;
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.4fr;
+    grid-template-rows: 0.2fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+    "head head ."
+    "left right .";
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#content p{
+    font-size: smaller;
+    width:70%;
+    color: rgb(172, 167, 151);
+}
+
+#head{
+grid-area: head;
+}
+
+#left{
+    grid-area: left;
+}
+
+#right{
+    grid-area: right;
+}
+
+#left img, #right img{
+    width: 40%;
+    float: left;
+}
+
+.style{
+    width: 70%;
+    font-size: 0.7em;
+    margin-bottom: 10%;
+}
+
+#footer {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "top top top top top top top top top"
+    ". . . b b b b . .";
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: smaller;
+}
+
+#top{
+    grid-area: top;
+    display: grid;
+  grid-template-columns: 1fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.3fr 1fr;
+  grid-template-rows: 0.5fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". home about location menu partners news contact .";
+    background-color: rgb(151, 143, 120);
+    color:white;
+    padding:2%;
+    text-align: center;
+}
+
+ #about, #location, #menu, #partners, #news, #contact{
+    border-left: solid white;
+}
+
+#home{
+    grid-area: home;
+}
+
+#about{
+    grid-area: about;
+}
+
+#location{
+    grid-area: location;
+}
+
+#menu{
+    grid-area: menu;
+}
+
+#partners{
+    grid-area: partners;
+}
+
+#news{
+    grid-area: news;
+}
+
+#contact{
+    grid-area: contact;
+}
+
+#bottom{
+    grid-area: b;
+    padding-top: 5%;
+    color: rgb(172, 167, 151);
+}
+
+    </style>
+
+
+</head>
+
+
+<body>
+    <div id="header">
+        <div class="img">
+            <img src="m1.jpg">
+        </div>
+
+        <div class="e1">
+            <a href="#">
+            </a>
+        </div>
+
+        <div class="e2">
+            <a href="#">
+            </a>
+        </div>
+
+        <div class="e3">
+            <a href="#">
+            </a>
+        </div>
+
+        <div class="e4">
+            <a href="#">
+            </a>
+        </div>
+
+        <div class="e5">
+            <a href="#">
+            </a>
+        </div>
+    </div>
+    
+    <div id="landing-page">
+        <div class="part">
+            <img src="m2.jpg">
+        </div>
+        <div class="text">
+            <img src="m3.jpg">
+            <p><b><span class="green">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></b>, sed do <br>
+                eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. <br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris <br> nisi ut aliquip ex ea
+                commodo consequat <u><span class="dark">read more</span></u></p>
+        </div>
+    </div>
+
+<div id="workpls">
+    <div id="column">
+        <img src="nw1.jpg"><br>
+        <ul>
+            <li>
+               <span class="green"><b>18.01.07</b></span><br>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium 
+            </li>
+            <li>
+                <span class="green"><b>17.01.07</b></span><br>
+                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium 
+             </li>
+             <li>
+                <span class="green"><b>15.01.07</b></span><br>
+                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium 
+             </li>
+             <li>
+                <span class="green"><b>more news</b></span><br>
+                  
+             </li>
+        </ul>
+            </div>
+
+<div id="line">
+    <img src="sr1.jpg">
+</div>
+
+<div id="content">
+
+<div id="head">
+<img src="sr2.jpg">
+</div>
+
+    <div id="left">
+        <img src="sr3.jpg" class="textwrap">
+       <div class="style"> <span class="green"><b>Lorem ipsum</b></span><br>
+        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit </div>
+        <p><b><span class="green">Lorem ipsum dolor sit amet, consectetur elit</span></b>, sed do
+            eiusmod tempor incididunt ut labore et dolore magna
+            aliqua.<u><span class="dark">read more</span></u></p>
+    </div>
+
+    <div id="right">
+        <img src="sr4.jpg" class="textwrap">
+        <div class="style">   <span class="green"><b>Dolor ipsum</b></span><br>
+        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit </div>
+<p><b><span class="green">Dolor ipsum dolor sit amet, consectetur elit</span></b>, sed do
+eiusmod tempor incididunt ut labore et dolore magna
+aliqua.<u><span class="dark">read more</span></u></p>
+    </div>
+
+</div>
+</div>
+
+<footer id="footer">
+<div id="top">
+<div id="home">
+    Home
+</div>
+<div id="about">
+    About Us
+</div>
+<div id="location">
+    Location
+</div>
+<div id="menu">
+    Menu
+</div>
+<div id="partners">
+   Partners
+</div>
+<div id="news">
+    News
+</div>
+<div id="contact">
+    Contact Us
+</div>
+</div>
+<div id="bottom">
+Copyright © Your Company Name
+</div>
+
+</footer>
+</body>
+</html>
